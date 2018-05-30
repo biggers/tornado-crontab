@@ -57,7 +57,7 @@ class CronTabCallback(PeriodicCallback):
         self.__is_utc = is_utc
 
         super(CronTabCallback, self).__init__(
-            callback, self._calc_callbacktime(), io_loop)
+            callback, self._calc_callbacktime())
 
         self.pid = os.getpid()
 
